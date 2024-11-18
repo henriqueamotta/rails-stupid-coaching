@@ -1,0 +1,15 @@
+<!-- The answer.html.erb will display the question you ask your coach as well as the coach’s answer. The controller will need to read the question from params and compute an instance variable @answer for the view to display. -->
+
+<div class="sentence question">
+    <div class="q-answer"><em>You</em></div>
+    <div class="quest"><em><%= @question %></em></div>
+</div>
+<br>
+<div class="sentence answer">
+    <div class="q-answer"><em>Your coach</em></div>
+    <div class="quest"><strong><%= @answer %></strong></div>
+</div>
+<br>
+<div class="to-back-link">
+    <a href="/ask">Do another question, my friend!</a>
+</div>
